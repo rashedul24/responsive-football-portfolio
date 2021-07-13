@@ -21,14 +21,17 @@ body {
   font-size: 32px;
   margin-bottom: 50px;
 }
-#link-arrow{
+.fa-arrow-right{
   margin-left: 20px;
   background-color: #E02C6D;
 }
 a{
   font-size: 16px;
-  font-style: oblique;
-  
+  font-style: oblique;  
+}
+.banner-info:hover .live-link{
+  transform: scale(1) rotate(60deg);
+  transition: transform 2s ease-in-out;
 }
 .banner-info a{
   text-decoration: none;
@@ -40,4 +43,8 @@ a{
 .banner-image img{
   width: 556.01px;
   height: 438px;
+}
+.banner-image:hover{
+ transform: scale(1.5) rotate(360deg); 
+ transition: transform 2s ease-in-out;
 }
