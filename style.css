@@ -147,7 +147,7 @@ ul{
 
 /* Footer Style Start */
 
-.footer {
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
