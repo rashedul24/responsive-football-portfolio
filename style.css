@@ -7,136 +7,206 @@ body {
   border-color: #ffffff;
   margin: 0;
 }
+
 /* Banner Style Start*/
 
-.banner{
+.banner {
   background-color: #2D25A0;
   /* margin: 0 auto; */
   height: 677px;
   display: flex;
   align-items: center;
-  justify-content:space-around ;
+  justify-content: space-around;
 }
+
 .banner-info {
   color: #FFFFFF;
   font-size: 42px;
   margin-bottom: 50px;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
   margin-left: 20px;
   background-color: #E02C6D;
 }
-a{
+
+a {
   font-size: 26px;
-  font-style: oblique;  
+  font-style: oblique;
 }
+
 .live-link:hover {
-  transform:skew(25deg);
+  transform: skew(25deg);
   transition: transform 0.5s ease-in-out;
 }
-.banner-info a{
+
+.banner-info a {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #E02C6D;
   padding: 14px 20px;
   border-radius: 5px;
 }
-.banner-image img{
+
+.banner-image img {
   width: 556.01px;
   height: 438px;
 }
-.banner-image:hover{
- transform: scale(1.5) rotate(360deg); 
- transition: transform 2s ease-in-out;
+
+.banner-image:hover {
+  transform: scale(1.5) rotate(360deg);
+  transition: transform 2s ease-in-out;
 }
+
 /* Banner Style end */
 
 /* Player Style Start */
 
-.players{
+.players {
   display: grid;
-  grid-template-columns: repeat(3, 1fr );
+  grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 24px;
   grid-column-gap: 24px;
   /* width: 1440px; */
   width: 80%;
   margin: 3% auto;
 }
-.player{
+
+.player {
   box-shadow: 10px 10px 40px gray;
-  height: 530px;
   margin: 5%;
   padding-top: 8%;
   padding-left: 3%;
   padding-bottom: 25%;
   border-radius: 15px;
 }
+
 .player:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
 }
-.player-image img{
+
+.player-image img {
   width: 85%;
   height: 50%;
   margin-left: 30px;
   border-radius: 15px;
 }
-.player-info{
+
+.player-info {
   width: 85%;
   height: 50%;
   padding-left: 30px;
   font-size: 20px;
 }
+
 /* Player Style End */
 
 /* Sponsors Style Start */
+.sponsor {
+  text-align: center;
+  font-size: 25px;
+}
 
+.logo {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+}
+
+.logo img {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
 
 /* Sponsors Style  End*/
 
 
 /* Footer Style Start */
 
-.footer{
+.footer {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-size: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
-.fab{
+
+.fab {
   height: 32px;
   width: 32px;
   margin: 20px;
-  color:lightseagreen;
+  color: lightseagreen;
   font-size: 30px;
   padding-bottom: 10px;
 }
+
 /* Footer Style End */
 
 /* Media Queries */
 
 /* Mobile Devices */
-@media only screen  and (max-width:688px){
-  .banner{
+@media only screen and (max-width:688px) {
+  .banner {
     flex-direction: column;
     margin-bottom: 5%;
+    padding-left: 5%;
     height: 100%;
     overflow: hidden;
   }
-  .players{
-    grid-template-columns: repeat(1, 1fr );
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    
   }
-  .footer-logo img{
-    margin-top: 20px;
-    width: 100%;    
+  .player{
+    padding-right: 10%;
+  }
+  .logo {
+    flex-direction:column;
+    height: 10%;
+    width: 250px;
+    padding-left: 10%;
+
+  }
+.copy-right{
+  text-align: center;
+
 }
-/* Tablet Devices */
-@media only screen  and (min-width:688px) and (max-width:992px){
-  .banner{
-    flex-direction: column;
+  .footer-logo img {
+    margin-top: 20px;
+    width: 100%;
   }
-  .players{
-    grid-template-columns: repeat(2, 1fr );
+}
+  /* Tablet Devices */
+  @media only screen and (min-width:688px) and (max-width:992px) {
+    .banner {
+      flex-direction: column;
+      margin-bottom: 5%;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .players {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+      margin: 0 auto;
+      padding-right: 10%;
+    }
+    .logo img{
+      width: 150px;
+      font-size: 100%;
+    }
+    .footer-logo img {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .copy-right{
+        text-align: center;
   }
 }
