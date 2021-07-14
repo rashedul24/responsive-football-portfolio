@@ -108,7 +108,7 @@ a {
   font-size: 25px;
 }
 
-.logo {
+.sponsor-logo {
   height: 180px;
   width: 100%;
   display: flex;
@@ -117,7 +117,7 @@ a {
 
 }
 
-.logo img {
+.sponsor-logo img {
   padding-left: 30px;
   margin-bottom: 30px;
 }
@@ -166,7 +166,9 @@ footer {
 
 /* Footer Style End */
 
+
 /* Media Queries */
+
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
@@ -185,7 +187,7 @@ footer {
   .player{
     padding-right: 10%;
   }
-  .logo {
+  .sponsor-logo {
     flex-direction:column;
     height: 10%;
     width: 250px;
@@ -202,10 +204,6 @@ footer {
   }
   .width-half img{
     width: 250px;
-  }
-  ul{
-    /* padding-right: 80%; */
-
   }
 
 .copy-right{
@@ -234,7 +232,7 @@ footer {
       margin: 0 auto;
       padding-right: 10%;
     }
-    .logo img{
+    .sponsor-logo img{
       width: 150px;
       font-size: 100%;
     }
